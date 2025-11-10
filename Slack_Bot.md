@@ -30,8 +30,9 @@
 ![Bot User OAuth Token](images/slack3.png)
 
 Body :
+
 {
   "channel": "#soc-alerts",
-  "text": "🚨 *WAZUH ALERT - SSH Brute Force Detected* 🚨\n\n*Rule:* $parse_alert.message.rule_id - $parse_alert.message.rule_description\n*Severity:* $parse_alert.message.rule_level\n*Source IP:* $parse_alert.message.source_ip\n*Target:* $parse_alert.message.target_agent ($parse_alert.message.target_ip)\n*User:* $parse_alert.message.attempted_user\n*Time:* $parse_alert.message.timestamp\n\n📊 *Actions Taken:*\n✅ TheHive Case Created\n✅ MISP Event #$misp_create_event.body.Event.id Created\n✅ IP Added to MISP IoC\n✅ IP Blocked\n\n🔗 *Links:*\nTheHive: http://10.0.30.104:9003\nMISP: http://10.0.30.104/events/view/$misp_create_event.body.Event.id",
+  "text": "🚨 *WAZUH ALERT - SSH Brute Force Detected* 🚨\n\n*Rule:* $parse_alert.message.rule_id - $parse_alert.message.rule_description\n*Severity:* $parse_alert.message.rule_level\n*Source IP:* $parse_alert.message.source_ip\n*Target:* $parse_alert.message.target_agent ($parse_alert.message.target_ip)\n*User:* $parse_alert.message.attempted_user\n*Time:* $parse_alert.message.timestamp\n\n📊 *Actions Taken:*\n✅ TheHive Case Created\n✅ MISP Event #$misp_create_event.body.Event.id Created\n✅ IP Added to MISP IoC\n✅ IP Blocked\n\n🔗 *Links:*\nTheHive: http://10.0.30.104:9003\MISP: http://10.0.30.104/events/view/$misp_create_event.body.Event.id",
   "mrkdwn": true
 }
