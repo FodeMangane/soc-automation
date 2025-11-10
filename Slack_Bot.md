@@ -1,12 +1,14 @@
 Étape 1 : Création de l'application Slack
-   1.	Accéder à https://api.slack.com/apps
-   2.	Cliquer sur Create New App
-   3.	Sélectionner From scratch
-   4.	Remplir : 
-   o	App Name : SOC Bot
-   o	Workspace : Sélectionner votre workspace Slack
-   5.	Puis nous clicons sur notre App
+   1. Accéder à https://api.slack.com/apps
+   2. Cliquer sur Create New App
+   3. Sélectionner From scratch
+   4. Remplir : 
+      App Name : SOC Bot
+      Workspace : Sélectionner votre workspace Slack
+   5. Puis nous clicons sur notre App
 ![Création de l'application SOC Bot](images/slack1.png)
+
+
 Étape 2 : Configuration des permissions (OAuth Scopes)
   1.	Dans le menu de gauche, aller dans OAuth & Permissions
   2.	Descendre jusqu'à Scopes → Bot Token Scopes
